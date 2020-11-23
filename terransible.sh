@@ -11,7 +11,7 @@ sudo curl -O https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_
 sudo mkdir /bin/terraform
 sudo unzip -f terraform_0.12.24_linux_amd64.zip -d /bin/terraform
 sudo unzip -f terraform_0.12.24_linux_amd64.zip -d /usr/local/bin
-sudo export PATH=$PATH:/bin/terraform
+export PATH=$PATH:/bin/terraform
 terraform --version
 sleep 3
 
