@@ -7,7 +7,7 @@ sudo apt install -y python-pip unzip
 sudo pip install --upgrade pip
 
 echo "--------->>>> Install Terraform <<<<-------------"
-curl -O https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+sudo curl -O https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
 sudo mkdir /bin/terraform
 sudo unzip -f terraform_0.12.24_linux_amd64.zip -d /bin/terraform
 sudo unzip -f terraform_0.12.24_linux_amd64.zip -d /usr/local/bin
