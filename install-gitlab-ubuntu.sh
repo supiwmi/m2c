@@ -37,8 +37,10 @@ sudo sed -i "s|external_url 'http://gitlab.example.com' *|external_url 'https://
 
 #sudo sed -i "s|nginx['ssl_certificate'] *|nginx['ssl_certificate'] = "/etc/gitlab/ssl/certificate.pem"|" /etc/gitlab/gitlab.rb
 #sudo sed -i "s|nginx['ssl_certificate_key'] *|nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem"|" /etc/gitlab/gitlab.rb
-echo -e "nginx['ssl_certificate'] = "/etc/gitlab/ssl/certificate.pem" " | sudo tee -a /etc/gitlab/gitlab.rb
-echo -e "nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem" " | sudo tee -a /etc/gitlab/gitlab.rb
+echo -e 'nginx['ssl_certificate'] = "/etc/gitlab/ssl/certificate.pem" ' | sudo tee -a /etc/gitlab/gitlab.rb
+echo -e 'nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem" ' | sudo tee -a /etc/gitlab/gitlab.rb
+#nginx['ssl_certificate'] = "/etc/gitlab/ssl/certificate.pem"
+#nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/key.pem"
 
 
 # The command set below will reconigure the gitlab and start gitlab server  
