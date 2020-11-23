@@ -5,7 +5,8 @@ provider "azurerm" {
 
   subscription_id = "69c3--------------------------------"
   tenant_id       = "4d73--------------------------------"
-
+# you can see your subscription_id in billing
+# you can see tenant_id by selecting all service and then type "Tenant properties"
   features {}
 }
 
