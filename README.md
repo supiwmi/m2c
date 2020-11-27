@@ -16,6 +16,7 @@ once complete you should be able to pull the code from https://github.com/supiwm
 # Application Backup
 To actually take the application backup, run the following.
 > gitlab-rake gitlab:backup:create
+
 > ls -ltrh /var/opt/gitlab/backups/
 
 # Transfer
